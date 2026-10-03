@@ -1,0 +1,6 @@
+{
+  "name": "BusinessOS",
+  "description": "Your Business. One Brain. An intelligent AI-powered business operating system connecting customers, sales, money, operations, and automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

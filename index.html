@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="h-full bg-slate-950 text-slate-100 antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessOS — Your Business. One Brain.</title>
+    <meta name="description" content="Your Business. One Brain. An intelligent AI-powered business operating system connecting customers, sales, money, operations, and automation." />
+    <meta property="og:title" content="BusinessOS — Your Business. One Brain." />
+    <meta property="og:description" content="Your Business. One Brain. An intelligent AI-powered business operating system connecting customers, sales, money, operations, and automation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // Suppress Vite HMR websocket disconnection errors in iframe preview
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        var msg = (reason && (reason.message || reason.toString())) || '';
+        if (msg.includes('WebSocket') || msg.includes('websocket')) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event.message || '';
+        if (msg.includes('WebSocket') || msg.includes('websocket')) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body class="h-full min-h-screen bg-slate-950 font-sans selection:bg-indigo-500/20 selection:text-indigo-300">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
