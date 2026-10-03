@@ -1,2 +1,0 @@
-# Business-OS
-YOUR BUSINESS. ONE BRAIN.
